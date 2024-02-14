@@ -1,0 +1,497 @@
+
+body{
+	position: absolute;
+	background-image: linear-gradient(#222222,#222222,#222222);
+/*	background-image: url("Cover2.jpg");*/
+	background-repeat: no-repeat;
+	background-size: 1700px 1400px;
+	overflow: hidden;
+}
+body, html{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+li{
+	font-family: "cocogoose Regular";
+	overflow: hidden;
+	padding: 10px;
+	margin: 5px;
+	border-radius: 50px;
+	cursor: default;
+	transition: background-color 0.3s;
+	color: #bfc3cb;
+}
+ol{
+	position: absolute;
+	right: 80px;
+	top: -15px;
+}
+li:hover{
+	background-color: #cb1606;
+/*	color: #c2d591;*/
+}
+
+
+#nowplaying{
+	background-color: #000000;
+	padding: 15px;
+	margin: 0px;
+	position: absolute;
+	bottom: 1px;
+	width: 100%;
+	color: white;
+	overflow: hidden;
+	cursor: default;
+	z-index: 3;
+}
+p{
+
+	height: 100px;
+	width: 600px;
+	margin: 0;
+	padding: 0;
+	float: left;
+	position: absolute;
+	right: 300px;
+	bottom: 300px;
+
+
+}
+#spam{
+	font-family: "REVOLUTION";
+	margin: 0;
+	padding: 0;
+	opacity: 0.2;
+	cursor: default;
+	z-index: -100;
+}
+#secondpage{
+	background-image: linear-gradient(blue,skyblue, white);
+	position: fixed;
+	bottom: 0px;
+	background-size: 100;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+	background-attachment: fixed;
+
+}
+.audio{
+	position: absolute;
+	left: 650px;
+	bottom: -8px;
+	width: 100px;
+	z-index: -10;
+}
+#audiofile{
+	background: transparent;
+	position: absolute;
+	z-index: -10;
+	
+}
+#audiofile::-webkit-media-controls {
+  border: none;
+  box-shadow: none;
+}
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-panel {
+  	background-color: #131342;
+ 	color: white;
+  	border-color: #131342;
+  	border: none;
+}
+audio::-webkit-media-controls-play-button{
+	color: white ;
+}
+
+#menu_list{
+	height: 50px;
+	width: 100%;
+	background-color: black;
+	position: fixed;
+	z-index: 4;
+}
+
+#rotatedisc {
+  animation: rotate 4s linear infinite;
+  transform-origin: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+#play-pause{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: 5px;
+	left: 150px;
+	padding: 10px;
+	background-color: #000000;
+	color: white;
+	border-color: white;
+}
+#play-pause:hover{
+	background-color: #cb1606;
+	cursor: pointer;
+}
+
+#trackname{
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	left: 250px;
+	bottom: 12px;
+	font-family: "Felix Titling Regular";
+	width: 300px;
+}
+
+.seek-bar-container{
+	position: absolute;
+	left: 600px;
+	bottom: 10px;
+}
+#seek-bar{
+	width: 400px;
+}
+.songdetail{
+	position: absolute;
+	right: -20px;
+	top: 180px;
+	z-index: 1;
+}
+#redback{
+	background-image: linear-gradient(transparent, #cb1606, transparent);
+	width: 1500px;
+	height: 400px;
+	border-radius: 50px;
+	opacity: 0.4;
+}
+#albumart{
+	position: absolute;
+	top: 50px;
+	left: 650px;
+	height: 300px;
+	width: 300px;
+	border-radius: 0px;
+	z-index: 5;
+	box-shadow: 5px 10px 50px black;
+
+}
+.songname{
+	font-family: "Xolonium Regular";
+	position: absolute;
+	top: 80px;
+	right: 150px;
+	color: white;
+}
+
+.disc2{
+	position: absolute;
+	left: -550px;
+	top: -30px;
+	bottom: 0px;
+	z-index: 2;
+
+}
+.disc{
+	position: absolute;
+	left: -550px;
+	top: -30px;
+	bottom: 0px;
+	z-index: 3;
+
+}
+.discall{
+	position: absolute;
+	top: -5px;
+	z-index: 2;
+
+}
+#music-player{
+	position: absolute;
+	z-index: 1;
+}
+span{
+	color: #cb1606;
+}
+
+@keyframes ambience{
+	0% {box-shadow: 2px 4px 500px white;}
+	25% {box-shadow: 5px 10 300px #cb1606;}
+	50% {
+		box-shadow: 2px 4px 400px #cb1606;
+	}
+	75% {box-shadow: 5px 10 50px royalblue;}
+	100% {
+		box-shadow: 2px 4px 500px white;
+	}
+}
+@keyframes ambiencereverse{
+	
+	
+}
+
+#detback{
+	background-color: #000000;
+	height: 400px;
+	width: 900px;
+	position: absolute;
+	top: 0px;
+	right: 70px;
+	border-radius: 200px;
+	opacity: 0.4;
+	box-shadow: 2px 4px 40px white;
+	animation: ambience 25s ease 5;
+	animation-direction: alternate;
+/*	animation: ambiencereverse 4s linear 1;*/
+}
+#detback:hover{
+	box-shadow: 5px 10px 800px white;
+}
+
+.songdetail:hover{
+	transform: translate3d(30px, 0px, 100px);
+	transition-duration: 1s;
+}
+
+.volume-control-container{
+	position: absolute;
+	bottom: 10px;
+	right: 300px;
+}
+#volume-text{
+	position: absolute;
+	bottom: -18px;
+	right: 150px;
+}
+@keyframes glow{
+	from {background-color: white;}
+	to {background-color: #cb1606;}
+}
+
+
+
+#detback{
+	animation: ambience 4s ease-in-out infinite;
+}
+#logo{
+	height: 120px;
+	width: 185px;
+	position: absolute;
+	left: 0px;
+	top: -30px;
+	margin: 0;
+	padding: 0;
+}
+
+.album1{
+	background-color: white;
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+	margin-top: 0px;
+	cursor: pointer;
+	transition: transform 1s;
+	}
+
+.album1:hover{
+	transform: scale(1.03);
+}
+.album2:hover{
+	transform: scale(1.03);
+}
+.album3:hover{
+	transform: scale(1.03);
+}
+.album4:hover{
+	transform: scale(1.03);
+}
+.album5:hover{
+	transform: scale(1.03);
+}
+.album6:hover{
+	transform: scale(1.03);
+}
+.album7:hover{
+	transform: scale(1.03);
+}
+.album8:hover{
+	transform: scale(1.03);
+}
+.album9:hover{
+	transform: scale(1.03);
+}
+
+.album2{
+	background-color: white;
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+	position: relative;
+	top: -265px;
+	left: 400px;
+	cursor: pointer;
+	transition: transform 1s;
+
+}
+
+.album3{
+	background-color: white;
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+	position: relative;
+	top: -530px;
+	left: 780px;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.album4{
+	background-color: white;
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+	position: relative;
+	top: -446px;
+	left: 1px;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.album5{
+	background-color: white;
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+	position: relative;
+	top: -711px;
+	left: 400px;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.album6{
+	background-color: white;
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+	position: relative;
+	top: -976px;
+	left: 780px;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.album7{
+	background-color: white;
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+	position: relative;
+	top: -900px;
+	left: 1px;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.album8{
+	background-color: white;
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+	position: relative;
+	top: -1165px;
+	left: 400px;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.album9{
+	background-color: white;
+	height: 250px;
+	width: 250px;
+	margin: 15px;
+	position: relative;
+	top: -1430px;
+	left: 780px;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+
+.albums{
+	position: relative;
+	top: 115px;
+	left: 470px;
+	/*display: grid;
+  grid-template-columns: repeat(1, fr); /* Three columns with equal width */
+  grid-gap: 10px;*/
+}
+
+.tracklist{
+	
+	height: 550px;
+	width: 800px;
+	font-size: 20px;
+	float: none;
+	position: relative;
+	left: 650px;
+	top: 80px;
+/*	text-align: center;*/
+	backdrop-filter: blur(10px);
+	margin: 0;
+	padding: 0;
+	overflow-y: scroll;
+	box-shadow: 0px 0px 130px -10px white;
+}
+
+.tracklist::-webkit-scrollbar{
+	display: none;
+}
+
+#listnames{
+	margin: 10px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-right: 400px;
+	transition: background-color 0.5s;
+	transition: padding-right 3s;
+	transition: color 1s;
+}
+
+#listnames:hover{
+	margin: 10;
+	padding: 0;
+	background-color: #cb1606;
+	color: white;
+	padding-right: 400px;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+#wallbg{
+	animation: fadein ease 1s;
+}
+
+@keyframes fadein{
+	0% {opacity: 0;}
+	25% {opacity: 0.1;}
+	50% {
+		opacity: 0.6;
+	}
+	75% {opacity: 0.6;}
+	100% {
+		opacity: 1;
+	}
+}

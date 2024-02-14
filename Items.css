@@ -1,0 +1,44 @@
+.Items{
+	background-color: white;
+	opacity: 0.3;
+	padding: 00px;
+	height: 600px;
+	width: 400px;
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	border-radius: 100px;
+	backdrop-filter: blur(10px);
+/*	overflow: scroll;*/
+}
+#slc{
+	position: absolute;
+	left: 50px;
+	top: 100px;
+	font-size: 30px;
+
+
+}
+
+a:link{
+	color: #cb1606;
+	opacity: 1;
+}
+
+a:visited{
+	color: #cb1606;
+	opacity: 1;
+}
+
+#tracklist_head{
+	position: absolute;
+	left: 65px;
+	font-family: "cocogoose Regular";
+}
+a{
+	text-decoration: none;
+}
+
+.Items::-webkit-scrollbar{
+	display: none;
+}

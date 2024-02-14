@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MUSOFIY</title>
+	<link rel="stylesheet" type="text/css" href="style.css"
+	<link rel="stylesheet" type="text/css" href="rotatingImage.css">
+</head>
+<body>
+
+	<div id="menu_list">
+		<img src="Logo.png" id="logo">
+		<ol style="text-align: right;">
+			<li style="float: left;"><a href="main.html" style="text-decoration: none; color: white;">Home</a></li>
+			<li style="float: left;">Visit</li>
+			<li style="float: left;">About</li>
+			<li style="list-style-type: none; float: left;">Contact US</li>
+		</ol>
+	</div>
+	<div id ="discall">
+
+	<div class="disc">
+		
+			<img src="disc.png" id="rotatingImage">
+		</div>
+
+	<div class="disc2">
+		
+			<img src="disc.png" id="rotatedisc">
+		</div>
+	</div>
+	<img src="Cover5.png" style="position: relative; z-index: -10; width: 1800px; bottom: 500px; mix-blend-mode: multiply;">
+	<div id="nowplaying">
+		<span>Now Playing</span>
+
+		
+    	<!-- Audio Control -->
+
+		<div class="audio">
+
+			<audio id="music-player" controls>
+				<source src="Top Hits/Husn(PagalWorld.com.pe).mp3" type="audio/mpeg">
+			</audio>
+
+		</div>
+
+		<div class="play-pause-button">
+                <button id="play-pause" class="play">Play/Pause</button>
+        </div>
+
+        <div id="trackname">
+        	<marquee>Husn</marquee>
+        </div>
+
+			<div class="seek-bar-container">
+            <input type="range" id="seek-bar" class="seek-bar" min="0" value="0" style="accent-color: #cb1606;">
+        </div>
+
+         <div class="volume-control-container">
+         	<h5 id="volume-text">Volume</h5>
+            <input type="range" id="volume-control" class="volume-control" min="0" max="1" step="0.01" value="1" style="accent-color: #cb1606;">
+        </div>
+
+	</div>
+	<div id="spam">
+		<p><font size=600px>LET'S VIBE TOGETHER</font></p>
+	</div>
+	
+<!-- <div id="secondpage">
+	<span>Hello World</span>
+</div> -->
+
+<div class="songdetail">
+	<div id="redback"></div>
+	<div id="detback"></div>
+
+	<img src="Cover5.png" id="albumart">
+
+	<div class="songname" style="position: absolute;
+	top: 80px;
+	right: 300px;">
+		<h1 id="songname">Husn</h1><br>
+		<h3 id="songname">Artist : Various</h3>
+		<h3 id="songname">Album : Top Hits</h3>	
+	</div>
+</div>
+
+<img src="Cover5.png" style="position: relative; z-index: -10; width: 1800px; bottom: 1000px; mix-blend-mode: multiply;" id="wallbg">
+
+<script type="text/javascript" src="script.js">
+
+</script>
+</body>
+</html>
